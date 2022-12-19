@@ -1,0 +1,14 @@
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE IF EXISTS `member`;
+DROP TABLE IF EXISTS `cart`;
+SET FOREIGN_KEY_CHECKS = 1;
+
+CREATE TABLE `member` (
+    `idx` NUMBER(8) NOT NULL,
+    `pass` INTEGER NOT NULL,
+    PRIMARY KEY (`idx`)
+);
+
+CREATE TABLE `cart` (
+    `idx_fk` NUMBER(8) NOT NULL
+);
